@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="21dp">
+
+    <View
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/placeholder_image"
+        android:layout_height="@dimen/placeholder_image"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:background="@drawable/shape_circle" />
+
+    <View
+        android:id="@+id/repo"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignTop="@+id/thumbnail"
+        android:background="@drawable/shape_round_corner_rectangle" />
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="260dp"
+        android:layout_height="10dp"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:background="@drawable/shape_round_corner_rectangle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/placeholder_bg"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/title"/>
+
+
+</RelativeLayout>
